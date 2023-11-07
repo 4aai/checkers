@@ -1,0 +1,223 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+    transition: 0.1s;
+}
+body{
+    background-color: hsl(0, 100%, 74%) ;
+    background-image: url(../img/bg-intro-desktop.png);
+}
+.cell {
+    width: 30px;
+    height: 30px;
+ 
+    /* width: 3vw;
+    height: 3vw; */
+
+    display: flex;
+    border-radius: 3px;
+   
+}
+.black {
+    background: black;
+}
+.white {
+    background: white;
+}
+.blue{
+    /* background: blue; */
+    background: hsl(250.2, 69.9%, 63.5%);
+}
+.red{
+    /* background: red; */
+    background: hsl(351.6, 93.4%, 64.1%);
+}
+.chess-board {
+    display: grid;
+    justify-content: center;
+    /* background-color: #EDF2F8; */
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    align-self: center;
+    margin: 10px;
+}
+.container{
+    /* width: 100vw;
+    height: calc(100vw * (9/16)); */
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* flex-direction: row; */
+    width: 100%;
+    /* height: 100vh; */
+    /* align-items: center; */
+    padding: 70px;
+    
+}
+.checker{
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    border: 4px solid white ;
+    margin: auto;
+    align-self: center;
+}
+
+.checker-enemy{
+    opacity: 0.4;
+}
+
+.checker-move{
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    margin: auto;
+    align-self: center;
+    background: white;
+    border: 10px solid black ;
+}
+.checker-move:hover{
+    width: 80%;
+    height: 80%;
+    border: 4px solid white ;
+    background: black;
+}
+
+.checkers-hover{
+    /* width: 60%;
+    height: 60%; */
+    border: 4px solid yellow  !important;
+}
+.checkers-click{
+    /* width: 60%;
+    height: 60%; */
+    border: 4px solid greenyellow  !important;
+}
+.king{
+    /* width: 60%;
+    height: 60%; */
+    border: 8px solid white ;
+}
+.title{
+    /* width: 60vw;
+    height: calc(60vw * (9/16)); */
+    /* width: 540px;
+    height: 540px; */
+    max-width: 500px;
+    /* min-width: 322px; */
+    border-radius: 10px;
+    border: 4px solid hsl(354.5, 69.9%, 63.5%);
+    color : hsl(343.2, 71%, 47.3%);
+    background-color: hsla(0, 0%, 0%, 0.18);
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center; */
+    margin: 4px;
+
+}
+.title-head {
+    /* font-family: Arial;
+    font-size: 24px; */
+    color: hsl(250.2, 69.9%, 63.5%);
+    
+}
+.title-caption {
+    color: white;
+    margin: 10px;
+    
+}
+
+.chess-nicknames{
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    height: 90%;
+    align-self: center;
+}
+.chess-nickname{
+    color: rgba(209, 199, 255 );
+    font-style: italic;
+    background-color: rgba(119, 97, 227, 0.219);
+    border-radius: 16px;
+    padding: 5px;
+    align-self: center;
+    font-size: medium;
+}
+
+.turn{
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.chess-nickname span{
+    color: white;
+    align-self: center;
+    font-style: normal;
+    font-size: xx-large;
+}
+
+.text-shadow {
+    text-shadow: 
+        -0   -1px 6px #FFFFFF,
+        0   -1px 6px #FFFFFF,
+        -0    1px 6px #FFFFFF,
+        0    1px 6px #FFFFFF,
+        -1px -0   6px #FFFFFF,
+        1px -0   6px #FFFFFF,
+        -1px  0   6px #FFFFFF,
+        1px  0   6px #FFFFFF,
+        -1px -1px 6px #FFFFFF,
+        1px -1px 6px #FFFFFF,
+        -1px  1px 6px #FFFFFF,
+        1px  1px 6px #FFFFFF,
+        -1px -1px 6px #FFFFFF,
+        1px -1px 6px #FFFFFF,
+        -1px  1px 6px #FFFFFF,
+        1px  1px 6px #FFFFFF;
+}
+.form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.controls{
+    /* width: 100%; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-self: center;
+}
+input, textarea{
+    width: 100%;
+    border-radius: 5px;
+    border-color: hsl(250.2, 69.9%, 63.5%) ;
+    background-color: hsla(0, 0%, 99.2%, 0.43);
+    padding: 20px;
+    /* padding-top: 10px; */
+    resize: none;
+    align-self: center;
+}
+.input-caption{
+    color: white;
+}
+button[type=submit], button {
+    /* width: 50%; */
+    padding: 5px;
+    margin: 5px;
+    /* display: inline; */
+    background-color: hsl(250.2, 69.9%, 63.5%);
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    border-radius: 5px;
+    align-self: center;
+}
+.hide{
+    display: none;
+}
